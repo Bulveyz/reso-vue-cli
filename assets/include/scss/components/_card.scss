@@ -1,0 +1,27 @@
+//
+// Card
+//
+
+.card {
+  border: none;
+
+  &-header {
+    font: {
+      weight: $card-header-font-weight;
+      size: $card-header-font-size;
+    }
+    color: $card-header-color;
+  }
+}
+
+@media (max-width: $md - 1) {
+  .card {
+    &-header,
+    &-body {
+      .rs-card-sm-space & {
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+    }
+  }
+}

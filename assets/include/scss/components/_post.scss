@@ -1,0 +1,36 @@
+//
+// Post
+//
+
+.rs-post {
+  &__title {
+    font: {
+      weight: 700;
+      size: 18px;
+    }
+  }
+
+  &__text {
+    font: {
+      weight: 300;
+      size: 14px;
+    }
+    color: #7f8182;
+  }
+}
+
+a.rs-post {
+  color: #313131;
+
+  &:hover {
+    color: #313131;
+  }
+}
+
+@media (min-width: $md) {
+  .rs-post {
+    &__preview {
+      width: 140px;
+    }
+  }
+}

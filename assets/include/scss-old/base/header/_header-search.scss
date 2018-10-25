@@ -1,0 +1,107 @@
+//
+// Header - Search
+//
+
+.rs-header-search {
+  position: relative;
+  @include px-to-rem(margin-right, 14px);
+
+  &__control {
+    width: 100%;
+    font: {
+      weight: 500;
+      size: 16px;
+      family: "Poppins", sans-serif;
+    }
+    color: #313131;
+    background-color: $g-color-white;
+    opacity: 0;
+    border: none;
+    @include px-to-rem(padding, 8px 40px 8px 17px);
+    transition: all .2s ease-in;
+
+    &::-webkit-input-placeholder {
+      color: #313131;
+      opacity: 1;
+    }
+
+    &::-moz-placeholder {
+      color: #313131;
+      opacity: 1;
+    }
+
+    .search-animation-start & {
+      opacity: 1;
+    }
+
+    &:focus {
+      outline: 0 none;
+    }
+
+    .st-fixed & {
+      box-shadow: 0 6px 16px -7px rgba($g-color-black, .1);
+    }
+  }
+
+  &__btn {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    @include px-to-rem(width, 40px);
+    height: 100%;
+    background: none;
+    cursor: pointer;
+    border: none;
+    padding: 0;
+    transform: translateY(-50%);
+
+    &-icon {
+      font-size: 20px;
+      color: $g-color-white;
+
+      .search-animation-start &,
+      .st-fixed & {
+        color: #e64443;
+      }
+    }
+
+    &:active,
+    &:focus {
+      outline: 0 none;
+    }
+  }
+}
+
+@media (min-width: $g-md) {
+  .rs-header-search {
+    flex: 1;
+    margin-left: 0;
+    @include px-to-rem(margin-right, 50px);
+
+    &__control {
+      background-color: $g-color-white;
+      opacity: 1;
+      border-radius: 4px;
+      @include px-to-rem(padding, 14px 50px 14px 17px);
+    }
+
+    &__btn {
+      @include px-to-rem(width, 50px);
+
+      &-icon {
+        color: #e64443;
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .rs-header-search {
+    flex: none;
+    @include px-to-rem(width, 485px);
+    @include px-to-rem(margin-right, 14px);
+  }
+}

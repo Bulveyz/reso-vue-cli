@@ -1,0 +1,22 @@
+//
+// Links
+//
+
+[class*="rs-link"] {
+  text-decoration: none;
+  transition: color .2s ease-in;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.rs-link {
+  &-red {
+    color: #e64443;
+
+    &:hover {
+      color: darken(#e64443, 10%);
+    }
+  }
+}

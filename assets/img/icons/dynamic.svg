@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="27px" height="23px" viewBox="0 0 27 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>Icons/Sound</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect x="0" y="0" width="27" height="23" id="rect-1"></rect>
+    </defs>
+    <g id="Project" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Reso-Projet" transform="translate(-1106.000000, -1816.000000)">
+            <g id="Timeline" transform="translate(619.000000, 381.000000)">
+                <g id="Post" transform="translate(0.000000, 937.000000)">
+                    <g id="Icons/Sound" transform="translate(487.000000, 498.000000)">
+                        <g id="Calque-638">
+                            <image x="0" y="0" width="27" height="23" xlink:href="data:image/png;base64,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"></image>
+                            <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#rect-1"></use>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,33 @@
+//
+// Discuss
+//
+
+.rs-discuss {
+  &__counter {
+    width: 25px;
+    line-height: 1;
+    color: #bababa;
+    text-align: center;
+    margin-right: 20px;
+
+    &-value {
+      font-size: 15px;
+      color: $grey-600;
+    }
+  }
+
+  &__title {
+    font: {
+      weight: 700;
+      size: 18px;
+    }
+  }
+}
+
+a.rs-discuss {
+  color: #313131;
+
+  &:hover {
+    color: #313131;
+  }
+}

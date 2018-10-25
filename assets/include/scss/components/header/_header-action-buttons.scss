@@ -1,0 +1,49 @@
+//
+// Header - Action Buttons
+//
+
+//<a class="rs-header-action-btn d-none d-md-inline-flex align-items-md-center ml-md-auto" href="#!">
+//<span class="rs-header-action-btn__icon mr-md-1">
+//<i class="reso-icon-document-alt"></i>
+//</span>
+//<span class="rs-header-action-btn__title">New project</span>
+//</a>
+//
+//<a class="rs-header-action-btn d-none d-md-inline-flex align-items-md-center ml-md-4" href="#!">
+//<span class="rs-header-action-btn__icon mr-md-1">
+//<i class="reso-icon-pencil"></i>
+//</span>
+//<span class="rs-header-action-btn__title">New content</span>
+//</a>
+
+.rs-header-action-btn {
+  color: $white;
+
+  &__icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    font-size: 18px;
+    background-color: transparent;
+    border-radius: 50%;
+    transition: all .2s ease-in 0s;
+  }
+
+  &__title {
+    font: {
+      weight: 700;
+      size: 13px;
+    }
+  }
+
+  &:hover {
+    color: $danger;
+
+    .rs-header-action-btn__icon {
+      color: $white;
+      background-color: $danger;
+    }
+  }
+}

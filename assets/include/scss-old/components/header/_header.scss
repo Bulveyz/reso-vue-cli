@@ -1,0 +1,102 @@
+/*------------------------------------
+  Headers
+------------------------------------*/
+.rs-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 8;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 84px;
+  @include px-to-rem(padding-left, 14px);
+  @include px-to-rem(padding-right, 80px);
+  transition: all .2s ease-in-out;
+
+  &-logo {
+    display: inline-flex;
+    @include px-to-rem(width, 76px);
+    @include px-to-rem(margin-right, 12px);
+    transition: margin-left .2s ease-in;
+
+    svg {
+      use {
+        &#logoPartFirstFillControl,
+        &#logoPartSecondFillControl {
+          fill: $g-color-white;
+        }
+
+        &#logoPartFirstFillControl {
+          .active & {
+            fill: #e64443;
+          }
+        }
+
+        &#logoPartSecondFillControl {
+          .active & {
+            fill: #f9c731;
+          }
+        }
+      }
+    }
+
+    .search-animation-start & {
+      @include px-to-rem(margin-left, -95px);
+    }
+  }
+
+  &-content {
+    max-width: 1236px;
+    flex: 1;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &.active {
+    height: 74px;
+    background-color: $g-color-white;
+    box-shadow: 0 2px 10px 0 rgba($g-color-black, .1);
+  }
+}
+
+@media (min-width: $g-md) {
+  .rs-header {
+    height: 120px;
+
+    &-logo {
+      @include px-to-rem(width, 140px);
+      @include px-to-rem(margin-right, 60px);
+    }
+
+    &.active {
+      height: 80px;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .rs-header {
+    &-logo {
+      @include px-to-rem(margin-right, 20px);
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .rs-header {
+    &-logo {
+      @include px-to-rem(margin-right, 60px);
+    }
+  }
+}
+
+@media (min-width: 1600px) {
+  .rs-header {
+    @include px-to-rem(padding-right, 104px);
+  }
+}
+
+@import "./header-search";
+
+@import "./header-profile";

@@ -1,0 +1,607 @@
+// ============================================================= //
+// Awesome UI Kit Dashboard Variables                                    //
+// ============================================================= //
+
+// Breakpoints
+// =========================================================
+$xs:                                                   0;
+$sm:                                                   576px;
+$md:                                                   768px;
+$lg:                                                   992px;
+$xl:                                                   1200px;
+
+// Color System
+// =============================================================
+
+// Main Colors
+$white:                                                #fff !default;
+$black:                                                #1b1e24 !default;
+$dark:                                                 #313131 !default;
+$light:                                                #fafbff !default;
+$black-light:                                          rgba(#000, .13) !default;
+$transparent:                                          transparent !default;
+
+// Greys
+$grey:                                                 #a9a9a9 !default;
+$grey-600:                                             #7f8182 !default;
+$grey-700:                                             #767676 !default;
+$grey-800:                                             #eee !default;
+
+// Colors
+$primary:                                              #444bf8 !default;
+$secondary:                                            #00c9a7 !default;
+$success:                                              #31ba63 !default;
+$info:                                                 #2cd2f6 !default;
+$warning:                                              #f1be25 !default;
+$danger:                                               #e64443 !default;
+
+$primary-light:                                        #e9eafd !default;
+$secondary-light:                                      #e5f9f6 !default;
+$info-light:                                           #e9fafe !default;
+$success-light:                                        #e5fdf4 !default;
+$danger-light:                                         #fde9ee !default;
+$warning-light:                                        #fdf8e9 !default;
+
+$facebook:                                             #4460a0 !default;
+$twitter:                                              #00aaec !default;
+$linkedin:                                             #007ebb !default;
+$bitbucket:                                            #205081 !default;
+$dribble:                                              #ec4989 !default;
+$pink:                                                 #ff5a5f !default;
+$google-plus:                                          #dc4e41 !default;
+$github:                                               #3e75c3 !default;
+$behance:                                              #1769ff !default;
+$dropbox:                                              #0f82e2 !default;
+$slack:                                                #77d4b6 !default;
+$mail:                                                 #499ed7 !default;
+
+$green:                                                $secondary !default;
+$yellow:                                               $warning !default;
+
+$theme-colors: (
+  "light":                                             $light,
+  "dark":                                              $dark,
+
+  "primary":                                           $primary,
+  "info":                                              $info,
+  "success":                                           $success,
+  "danger":                                            $danger,
+
+  "grey":                                              $grey,
+  "dark-grey":                                         $grey-700,
+  "light-grey":                                        $grey-800
+);
+
+// Typo
+// =============================================================
+$font-size-base:                                       16px !default;
+$font-weight-strong:                                   400 !default;
+$font-primary:                                         "Poppins", sans-serif !default;
+$border-radius:                                        4px !default;
+$box-shadow-base:                                      0 2px 10px 0 rgba($black, .06) !default;
+
+// Header
+// =============================================================
+$header-z-index:                                       4 !default;
+$header-height:                                        4.125rem !default;
+$header-height-mobile:                                 3.75rem !default;
+$header-font-size:                                     .875rem !default;
+$header-bg:                                            $white !default;
+
+// Invokers
+$header-invokers-font-size:                            1.125rem !default;
+
+$header-invokers-item-spacer-x:                        0 !default;
+$header-invokers-item-color:                           $grey !default;
+$header-invokers-item-hover-color:                     $primary !default;
+$header-invokers-item-lg-spacer-x:                     0 !default;
+
+$header-invokers-item-img-width:                       1.625rem !default;
+$header-invokers-item-img-height:                      $header-invokers-item-img-width !default;
+$header-invokers-item-img-lg-spacer-x:                 .75rem !default;
+$header-invokers-item-img-lg-width:                    2.25rem !default;
+$header-invokers-item-img-lg-height:                   $header-invokers-item-img-lg-width !default;
+
+$header-invokers-item-title-font-size:                 .875rem !default;
+$header-invokers-item-title-color:                     $dark !default;
+
+$header-invokers-item-arrow-spacer-x:                  .375rem !default;
+$header-invokers-item-arrow-font-size:                 .875rem !default;
+$header-invokers-item-arrow-color:                     $grey !default;
+$header-invokers-item-arrow-lg-spacer-x:               1rem !default;
+
+// Left Section
+$header-left-section-padding-y:                        .9375rem !default;
+$header-left-section-padding-x:                        .9375rem !default;
+$header-left-section-content-alignment:                center !default;
+$header-left-section-lg-padding-y:                     1.25rem !default;
+$header-left-section-lg-padding-x:                     1.25rem !default;
+$header-left-section-lg-content-alignment:             center !default;
+
+// Middle Section
+$header-middle-section-padding-y:                      0 !default;
+$header-middle-section-padding-x:                      0 !default;
+$header-middle-section-border-width:                   1px !default;
+$header-middle-section-border-color:                   $white !default;
+$header-middle-section-lg-padding-y:                   0 !default;
+$header-middle-section-lg-padding-x:                   0 !default;
+
+// Right Section
+$header-right-section-padding-y:                       0 !default;
+$header-right-section-padding-x:                       0 !default;
+$header-right-section-lg-padding-y:                    0 !default;
+$header-right-section-lg-padding-x:                    0 !default;
+
+// Logo
+$header-logo-font-weight:                              500 !default;
+$header-logo-font-size:                                1.125rem !default;
+$header-logo-color:                                    $white !default;
+$header-logo-hover-color:                              $white !default;
+$header-logo-icon-spacer-x:                            .625rem !default;
+
+// Error
+$header-error-offset-y:                                3.75rem !default;
+$header-error-width:                                   100% !default;
+$header-error-height:                                  auto !default;
+$header-error-content-alignment:                       center !default;
+$header-error-bg:                                      $transparent !default;
+
+// Login
+$header-login-spacer-y:                                3.75rem !default;
+$header-login-spacer-x:                                auto !default;
+$header-login-height:                                  auto !default;
+$header-login-content-alignment:                       start !default;
+$header-login-bg:                                      $transparent !default;
+$header-login-sm-width:                                22.5rem !default;
+
+// Header Search
+// =============================================================
+$header-search-form-spacer-y:                          .3125rem !default;
+$header-search-form-padding-y:                         .625rem !default;
+$header-search-form-padding-x:                         .625rem !default;
+$header-search-form-z-index:                           5 !default;
+$header-search-form-width:                             calc(100vw - .625rem) !default;
+$header-search-form-bg-color:                          $white !default;
+$header-search-form-border-radius:                     $border-radius !default;
+$header-search-form-box-shadow:                        0 5px 20px 0 rgba($black, .2) !default;
+
+$header-search-btn-font-size:                          1rem !default;
+$header-search-btn-color:                              $grey !default;
+$header-search-btn-spacer-x:                           .9375rem !default;
+
+$header-search-input-font-size:                        $header-font-size !default;
+$header-search-input-color:                            $grey !default;
+
+// Sidebar
+// =============================================================
+$sidebar-spacer-y:                                     1.5625rem !default;
+$sidebar-spacer-x:                                     .875rem !default;
+$sidebar-width:                                        15.125rem !default;
+$sidebar-min-width:                                    4.625rem !default;
+$sidebar-font-size:                                    .875rem !default;
+$sidebar-bg:                                           $dark !default;
+
+$sidebar-menu-item-spacer-y:                           .875rem !default;
+$sidebar-menu-item-spacer-x:                           1.25rem !default;
+$sidebar-menu-item-border-radius:                      4px !default;
+$sidebar-menu-item-font-weight:                        500 !default;
+$sidebar-menu-item-font-size:                          .875rem !default;
+$sidebar-menu-item-color:                              $white !default;
+$sidebar-menu-item-hover-color:                        $white !default;
+$sidebar-menu-item-hover-bg:                           rgba($light, .2) !default;
+$sidebar-menu-item-active-color:                       $white !default;
+$sidebar-menu-item-active-bg:                          rgba($light, .2) !default;
+
+$sidebar-sub-menu-item-font-weight:                    600 !default;
+$sidebar-sub-menu-item-font-size:                      .875rem !default;
+$sidebar-sub-menu-item-color:                          $white !default;
+$sidebar-sub-menu-item-hover-color:                    $white !default;
+$sidebar-sub-menu-item-active-color:                   $white !default;
+
+$sidebar-menu-item-icon-spacer-x:                      1rem !default;
+$sidebar-menu-item-icon-font-size:                     1.125rem !default;
+$sidebar-menu-item-icon-color:                         $white !default;
+$sidebar-menu-item-hover-icon-color:                   $white !default;
+$sidebar-menu-item-active-icon-color:                  $white !default;
+
+$sidebar-sub-menu-item-icon-spacer-x:                  1rem !default;
+$sidebar-sub-menu-item-icon-font-weight:               400 !default;
+$sidebar-sub-menu-item-icon-font-size:                 1.125rem !default;
+$sidebar-sub-menu-item-icon-color:                     $white !default;
+$sidebar-sub-menu-item-hover-icon-color:               $white !default;
+$sidebar-sub-menu-item-active-icon-color:              $white !default;
+
+// Links
+// ====================================================
+$link-hover-decoration:                                none !default;
+
+// Headings
+// ====================================================
+$headings-font-family:                                 "Poppins", sans-serif !default;
+
+$headings-font-weight:                                 500 !default;
+
+$h1-font-size:                                         2rem !default;
+$h2-font-size:                                         1.625rem !default;
+$h3-font-size:                                         1.25rem !default;
+$h4-font-size:                                         1rem !default;
+$h5-font-size:                                         .875rem !default;
+$h6-font-size:                                         .75rem !default;
+
+// Buttons
+// ====================================================
+$btn-padding-y:                                        .6875rem !default;
+$btn-padding-x:                                        1.42857143rem !default;
+$font-size-base:                                       1rem;
+$btn-font-size:                                        .875rem !default;
+$btn-line-height:                                      1.6 !default;
+$btn-font-weight:                                      500 !default;
+$btn-border-radius:                                    4px !default;
+$btn-focus-width:                                      0 !default;
+
+$btn-padding-y-sm:                                     .375rem;
+$btn-padding-x-sm:                                     1.07142857rem;
+$font-size-sm:                                         .875rem;
+$btn-line-height-sm:                                   1.6;
+
+$btn-padding-y-lg:                                     .875rem;
+$btn-padding-x-lg:                                     1.375rem;
+$font-size-lg:                                         .875rem;
+$btn-line-height-lg:                                   1.6;
+
+$btn-pill-border-radius:                               1.4375rem !default;
+$btn-pill-sm-border-radius:                            1.125rem;
+$btn-pill-lg-border-radius:                            2rem;
+
+// Badges
+// =============================================================
+$badge-font-weight:                                    500 !default;
+$badge-font-size:                                      .875rem !default;
+$badge-border-radius:                                  1.125rem !default;
+$badge-padding-y:                                      .6875rem !default;
+$badge-padding-x:                                      1.375rem !default;
+
+$badge-warning-color:                                  $white !default;
+
+$badge-soft-primary-color:                             $primary !default;
+$badge-soft-secondary-color:                           $secondary !default;
+$badge-soft-success-color:                             $success !default;
+$badge-soft-warning-color:                             $warning !default;
+$badge-soft-danger-color:                              $danger !default;
+$badge-soft-info-color:                                $info !default;
+
+// Alerts
+// ====================================================
+$alert-padding-y:                                      1.0625rem !default;
+$alert-padding-x:                                      1.5rem !default;
+$alert-border-radius:                                  4px !default;
+$alert-font-weight:                                    500 !default;
+
+$alert-bg-level:                                       0 !default;
+$alert-border-level:                                   0 !default;
+$alert-color-level:                                    -12 !default;
+
+$alert-full-width-padding-y:                           1.0625rem !default;
+$alert-full-width-padding-x:                           1.5rem !default;
+$alert-full-width-border-radius:                       0 !default;
+
+$alert-primary-light-color:                             $primary !default;
+$alert-secondary-light-color:                           $secondary !default;
+$alert-success-light-color:                             $success !default;
+$alert-warning-light-color:                             $warning !default;
+$alert-danger-light-color:                              $danger !default;
+$alert-info-light-color:                                $info !default;
+
+// Close
+// ====================================================
+$close-font-size:                                      1.25rem !default;
+$close-color:                                          inherit !default;
+$close-text-shadow:                                    none !default;
+
+// List Group
+// ====================================================
+$list-group-border-color:                              $grey-800 !default;
+$list-group-border-radius:                             4px !default;
+
+// Pagination
+// ====================================================
+$pagination-padding-y:                                 0 !default;
+$pagination-padding-x:                                 0 !default;
+$pagination-border-width:                              0 !default;
+$pagination-color:                                     $dark !default;
+$pagination-hover-color:                               $white !default;
+$pagination-hover-bg:                                  $primary !default;
+
+$pagination-link-spacer-y:                             0 !default;
+$pagination-link-spacer-x:                             .125rem !default;
+$pagination-link-width:                                2.5rem !default;
+$pagination-link-font-weight:                          500 !default;
+$pagination-link-height:                               2.5rem !default;
+$pagination-link-border-radius:                        4px !default;
+$pagination-arrows-spacer-x:                           1.25rem !default;
+$pagination-arrows-color:                              $grey !default;
+$pagination-arrows-bg:                                 $grey-800 !default;
+$pagination-arrows-hover-color:                        $white !default;
+$pagination-arrows-hover-bg:                           $primary !default;
+
+// Tables
+// ====================================================
+$table-font-weight:                                    500 !default;
+$table-font-size:                                      .875rem !default;
+$table-color:                                          $dark !default;
+$table-border-color:                                   $grey-700 !default;
+$table-hover-bg:                                       $light !default;
+$table-border-width:                                   1px !default;
+$table-th-font-weight:                                 400 !default;
+$table-th-font-size:                                   .875rem !default;
+$table-th-color:                                       $grey !default;
+$table-accent-bg:                                      $light !default;
+
+// Forms
+// ====================================================
+$input-padding-y:                                      .9375rem !default;
+$input-padding-x:                                      1rem !default;
+$input-line-height:                                    1.4 !default;
+$input-font-weight:                                    500 !default;
+$input-font-size:                                      .875rem !default;
+$input-color:                                          $dark !default;
+$input-placeholder-color:                              $grey-600 !default;
+$input-border-width:                                   1px !default;
+$input-border-color:                                   $grey-800 !default;
+$input-box-shadow:                                     none !default;
+$input-focus-border-color:                             $grey !default;
+$input-focus-box-shadow:                               none !default;
+$input-focus-width:                                    0 !default;
+$input-disabled-bg:                                    $light !default;
+
+$form-label-color-disabled:                            $grey !default;
+$border-radius-pill:                                   1.875rem !default;
+$form-icon-color:                                      $grey !default;
+$form-toggle-color:                                    $grey !default;
+$form-toggle-border-color:                             $grey-700 !default;
+$form-toggle-circle-bg-color:                          $grey-700 !default;
+$form-toggle-color-checked:                            $white !default;
+$form-toggle-bg-color-checked:                         $primary !default;
+$form-toggle-border-color-checked:                     $primary !default;
+$form-toggle-circle-bg-color-checked:                  $white !default;
+$form-toggle-color-disabled:                           $grey !default;
+$form-toggle-border-color-disabled:                    $grey-700 !default;
+$form-toggle-circle-bg-color-disabled:                 $grey-700 !default;
+$form-toggle-bg-color-disabled-checked:                rgba($primary, .7) !default;
+$form-toggle-border-color-disabled-checked:            rgba($primary, .7) !default;
+
+// Login Form
+$form-login-spacer-y:                                  auto !default;
+$form-login-spacer-x:                                  0 !default;
+$form-login-width:                                     22.5rem !default;
+
+// Custom Form
+$custom-control-gutter:                                2.125rem !default;
+$custom-control-indicator-size:                        1.25rem !default;
+$custom-control-indicator-bg:                          $grey-800 !default;
+$custom-control-indicator-disabled-bg:                 $grey-800 !default;
+$custom-control-indicator-checked-bg:                  $grey !default;
+$custom-control-indicator-checked-disabled-bg:         rgba($primary, .7) !default;
+$custom-control-indicator-focus-box-shadow:            none !default;
+$custom-checkbox-indicator-border-radius:              2px !default;
+
+// Progress
+// =============================================================
+$progress-bg:                                          $grey-800 !default;
+
+// Content
+// =============================================================
+$body-padding-y:                                       .9375rem !default;
+$body-padding-x:                                       .9375rem !default;
+$body-md-padding-y:                                    1.875rem !default;
+$body-md-padding-x:                                    1.875rem !default;
+
+$content-section-padding-y:                            .9375rem !default;
+$content-section-padding-x:                            .9375rem !default;
+$content-section-md-padding-y:                         1.5625rem !default;
+$content-section-md-padding-x:                         1.5625rem !default;
+$content-section-bg:                                   $white !default;
+$content-section-border-radius:                        $border-radius !default;
+$content-section-box-shadow:                           0 2px 20px 0 rgba($grey, .12) !default;
+
+// Card
+// =============================================================
+$card-bg:                                              $white !default;
+$card-border-color:                                    $grey-800 !default;
+$card-border-radius:                                   $border-radius !default;
+$card-box-shadow:                                      none !default;
+$card-cap-bg:                                          $white !default;
+$card-spacer-y:                                        1.4375rem !default;
+$card-spacer-x:                                        1.5625rem !default;
+
+$card-header-font-size:                                1.125rem !default;
+$card-header-font-weight:                              700;
+$card-header-color:                                    $dark;
+$card-header-border-width:                             0 !default;
+$card-header-border-color:                             $transparent;
+$card-header-not-collapsed-color:                      $dark;
+
+$card-footer-border-width:                             0 !default;
+$card-footer-border-color:                             $transparent !default;
+
+$card-title-spacer-y:                                  2rem !default;
+$card-title-font-weight:                               500 !default;
+$card-title-font-size:                                 1.125rem !default;
+
+$card-text-line-height:                                1.4 !default;
+$card-text-font-size:                                  .875rem !default;
+$card-text-color:                                      $grey !default;
+
+// Card Light
+$card-light-wrap-spacer-y:                             0 !default;
+$card-light-wrap-spacer-x:                             0 !default;
+$card-light-wrap-border-width:                         1px !default;
+$card-light-wrap-border-color:                         $light !default;
+$card-light-spacer-y:                                  1.25rem !default;
+$card-light-spacer-x:                                  .875rem !default;
+$card-light-bg:                                        $white !default;
+$card-light-border-radius:                             $border-radius !default;
+$card-light-cap-bg:                                    $light !default;
+
+// Accordion
+// =============================================================
+$accordion-card-header-spacer-y:                       1rem !default;
+$accordion-card-header-spacer-x:                       0 !default;
+$accordion-card-body-spacer-y:                         1rem !default;
+$accordion-card-body-spacer-x:                         0 !default;
+$accordion-card-footer-border-width:                   1px !default;
+$accordion-card-header-border-color:                   $grey-700 !default;
+
+// Charts
+// =============================================================
+
+// Doughnuts
+$chart-doughnut-label-font-size:                       1.125rem !default;
+
+// Tooltips
+$chart-tooltip-box-shadow:                             0 8px 15px 0 rgba($black, .05);
+$chart-tooltip-spacer-y:                               .875rem !default;
+$chart-tooltip-spacer-x:                               .9375rem !default;
+$chart-tooltip-title-bottom-space:                     2px !default;
+$chart-tooltip-value-font-weight:                      600 !default;
+$chart-tooltip-value-font-size:                        1.125rem !default;
+$chart-tooltip-triangle-size:                          .75rem !default;
+
+// Tabs
+// =============================================================
+
+// Card Header
+$nav-tabs-card-header-border-width:                    0;
+
+$nav-tabs-card-header-item-font-weight:                500;
+$nav-tabs-card-header-item-font-size:                  .875rem;
+$nav-tabs-card-header-item-border-width:               2px;
+$nav-tabs-card-header-item-active-border-color:        $primary;
+
+$nav-tabs-card-header-link-color:                      $primary;
+$nav-tabs-card-header-link-active-color:               $dark;
+$nav-tabs-card-header-link-border-width:               0;
+$nav-tabs-card-header-link-space:                      0;
+
+// Simple
+$nav-tabs-simple-border-width:                         0;
+
+$nav-tabs-simple-link-space:                           0;
+$nav-tabs-simple-link-border-width:                    0;
+
+// Nav
+// =============================================================
+$nav-link-padding-x:                                   1.5rem !default;
+
+$nav-pills-border-radius:                              2rem !default;
+$nav-pills-link-active-color:                          $white !default;
+$nav-pills-link-hover-color:                           $white !default;
+$nav-pills-link-active-bg:                             $danger !default;
+$nav-pills-link-hover-bg:                              $danger !default;
+
+$nav-tabs-padding-y:                                   .9375rem !default;
+$nav-tabs-padding-x:                                   .9375rem !default;
+$nav-tabs-border-width:                                1px !default;
+$nav-tabs-line-height:                                 1.4 !default;
+$nav-tabs-border-color:                                $grey-800 !default;
+$nav-tabs-border-radius:                               2px !default;
+$nav-tabs-link-hover-border-color:                     $grey-800 !default;
+$nav-link-disabled-color:                              $grey-800 !default;
+$nav-tabs-link-font-weight:                            500 !default;
+$nav-tabs-link-color:                                  $grey !default;
+$nav-tabs-link-active-color:                           $dark !default;
+$nav-tabs-link-active-bg:                              $white !default;
+$nav-tabs-link-active-border-color:                    $grey-800 !default;
+$nav-tabs-link-active-border-top-color:                $primary !default;
+
+$nav-tabs-line-bottom-padding-y:                       .9375rem !default;
+$nav-tabs-line-bottom-padding-x:                       0 !default;
+$nav-tabs-line-bottom-border-width:                    2px !default;
+$nav-tabs-line-bottom-line-height:                     1.4 !default;
+$nav-tabs-line-bottom-border-color:                    $grey-800 !default;
+$nav-tabs-line-bottom-link-hover-border-color:         $primary !default;
+$nav-link-line-bottom-disabled-color:                  $primary !default;
+$nav-tabs-line-bottom-item-offset:                     2rem !default;
+$nav-tabs-line-bottom-link-font-weight:                500 !default;
+$nav-tabs-line-bottom-link-color:                      $grey !default;
+$nav-tabs-line-bottom-link-active-color:               $dark !default;
+$nav-tabs-line-bottom-link-active-bg:                  $transparent !default;
+$nav-tabs-line-bottom-link-active-border-color:        $primary !default;
+
+$nav-tabs-line-top-padding-y:                          .9375rem !default;
+$nav-tabs-line-top-padding-x:                          0 !default;
+$nav-tabs-line-top-border-width:                       2px !default;
+$nav-tabs-line-top-line-height:                        1.4 !default;
+$nav-tabs-line-top-border-color:                       $grey-800 !default;
+$nav-tabs-line-top-link-hover-border-color:            $primary !default;
+$nav-link-line-top-disabled-color:                     $primary !default;
+$nav-tabs-line-top-item-offset:                        2rem !default;
+$nav-tabs-line-top-link-font-weight:                   500 !default;
+$nav-tabs-line-top-link-color:                         $primary !default;
+$nav-tabs-line-top-link-active-color:                  $dark !default;
+$nav-tabs-line-top-link-active-bg:                     $transparent !default;
+$nav-tabs-line-top-link-active-border-color:           $primary !default;
+
+$nav-tabs-pills-based-padding-y:                       .9375rem !default;
+$nav-tabs-pills-based-padding-x:                       .9375rem !default;
+$nav-tabs-pills-based-border-width:                    2px !default;
+$nav-tabs-pills-based-line-height:                     1.4 !default;
+$nav-tabs-pills-based-border-color:                    $grey-800 !default;
+$nav-tabs-pills-based-border-radius:                   2px !default;
+$nav-tabs-pills-based-link-hover-border-color:         $primary !default;
+$nav-link-pills-based-disabled-color:                  $primary !default;
+$nav-tabs-pills-based-link-font-weight:                400 !default;
+$nav-tabs-pills-based-link-color:                      $primary !default;
+$nav-tabs-pills-based-link-active-color:               $white !default;
+$nav-tabs-pills-based-link-active-bg:                  $primary !default;
+$nav-tabs-pills-based-link-active-border-color:        $primary !default;
+
+// Profile
+// =============================================================
+$profile-header-lg-padding-y:                          0 !default;
+$profile-header-lg-padding-x:                          4.75rem !default;
+$profile-header-lg-width:                              22.5rem !default;
+
+// Timeline
+// =============================================================
+$timeline-spacer-x:                                    .625rem !default;
+$timeline-spacer-lg-x:                                 1.875rem !default;
+$timeline-border-width:                                2px !default;
+$timeline-border-color:                                $light !default;
+$timeline-item-spacer-y:                               1.375rem !default;
+$timeline-item-padding-x:                              1.25rem !default;
+$timeline-item-padding-lg-x:                           1.875rem !default;
+$timeline-item-helper-offset-x:                        .3125rem !default;
+$timeline-item-helper-width:                           .6875rem !default;
+$timeline-item-helper-height:                          .6875rem !default;
+$timeline-item-helper-border-radius:                   50% !default;
+$timeline-item-helper-bg:                              $grey !default;
+
+// Error
+// =============================================================
+$error-title-line-height:                              1 !default;
+$error-title-font-weight:                              700 !default;
+$error-title-font-size:                                10rem !default;
+$error-title-md-font-size:                             15.5rem !default;
+$error-title-color:                                    $grey !default;
+
+// Breadcrumb
+// =============================================================
+$breadcrumb-padding-y:                                 0 !default;
+$breadcrumb-padding-x:                                 0 !default;
+$breadcrumb-margin-bottom:                             1rem !default;
+$breadcrumb-bg:                                        $transparent !default;
+$breadcrumb-active-color:                              $white !default;
+$breadcrumb-divider:                                   "\e910" !default;
+$breadcrumb-item-padding:                              .75rem !default;
+$breadcrumb-divider-color:                             $white !default;
+
+// Modal
+// =============================================================
+$modal-md:                                             34.6875rem !default;
+$modal-content-border-width:                           0 !default;
+
+$modal-header-padding:                                 1.5625rem !default;
+$modal-title-line-height:                              1.4 !default;
+
+$modal-inner-padding:                                  1.5625rem !default;

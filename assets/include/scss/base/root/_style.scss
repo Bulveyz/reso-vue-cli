@@ -1,0 +1,108 @@
+//
+// Default Styles
+//
+
+html,
+body {
+  height: 100%;
+  min-height: 100%;
+}
+
+html {
+  font-size: $font-size-base;
+}
+
+body {
+  position: relative;
+  font: {
+    weight: 400;
+    size: $font-size-base;
+    family: $font-primary;
+  }
+  line-height: 1.6;
+  color: $dark;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -moz-font-feature-settings: "liga", "kern";
+  text-rendering: optimizelegibility;
+  background-color: $light;
+}
+
+a {
+  color: $primary;
+  transition: all .2s ease-in;
+
+  &:hover {
+    color: $primary;
+    text-decoration: none;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+p {
+  line-height: 1.5;
+}
+
+small, .small {
+  @include px-to-rem(font-size, 14px);
+}
+
+figure {
+  margin-bottom: 0;
+}
+
+hr {
+  border-color: $grey-800;
+}
+
+canvas {
+  max-width: 100% !important;
+}
+
+[role=button] {
+  cursor: pointer;
+}
+
+.container {
+  position: relative;
+}
+
+// Headings
+.h1, .h2, .h3, .h4, .h5, .h6,
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.2;
+}
+
+// Highlight Color
+::-moz-selection {
+  color: $white;
+  background-color: $danger;
+}
+
+::selection {
+  color: $white;
+  background-color: $danger;
+}
+
+.bg-primary ::-moz-selection {
+  color: $primary;
+  background-color: $white;
+}
+
+.bg-primary ::selection {
+  color: $primary;
+  background-color: $white;
+}
+
+@media (max-width: $md - 1) {
+  body {
+    &.is-sidebar-opened {
+      & > main {
+        opacity: 0;
+      }
+    }
+  }
+}

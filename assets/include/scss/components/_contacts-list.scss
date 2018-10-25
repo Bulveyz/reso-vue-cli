@@ -1,0 +1,111 @@
+//
+// Contacts List
+//
+
+.rs-contacts-list {
+  &__item {
+    font: {
+      weight: 500;
+      size: 18px;
+    }
+
+    &-icon {
+      position: absolute;
+      top: 50%;
+      left: 10px;
+      z-index: 2;
+      min-width: 30px;
+      font-size: 18px;
+      color: #fff;
+      transform: translateY(-50%);
+      transition: color .2s ease-in;
+    }
+
+    &-control,
+    .rs-editable__pseudo-link,
+    .rs-editable__pseudo-text {
+      font: {
+        weight: 500;
+        size: 16px;
+      }
+      color: #fff;
+    }
+
+    &-control {
+      padding: 4px 30px 4px 45px;
+
+      .rs-contacts-list__item.is-without-init-value & {
+        padding: 4px 6px 4px 45px;
+      }
+
+      &::placeholder {
+        opacity: 1;
+        color: #fff;
+      }
+    }
+
+    .rs-editable__pseudo-link,
+    .rs-editable__pseudo-text {
+      display: inline-block;
+      max-width: calc(100% - 30px);
+      line-height: 1.5;
+      padding: 4px 10px 4px 45px;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 2px;
+    }
+  }
+}
+
+.rs-editable:not(.is-focus) .rs-editable__pseudo-link:hover + .rs-contacts-list__item-icon {
+  color: $danger;
+}
+
+.rs-editable:not(.is-without-init-value) .rs-editable__pseudo-link + .rs-contacts-list__item-control,
+.rs-editable:not(.is-without-init-value) .rs-editable__pseudo-text + .rs-contacts-list__item-control,
+.rs-editable:not(.is-without-init-value) .rs-editable__pseudo-link + * + .rs-contacts-list__item-control,
+.rs-editable:not(.is-without-init-value) .rs-editable__pseudo-text + * + .rs-contacts-list__item-control {
+  opacity: 0;
+}
+
+.rs-editable:not(.is-without-init-value).is-focus .rs-editable__pseudo-link + .rs-contacts-list__item-control,
+.rs-editable:not(.is-without-init-value).is-focus .rs-editable__pseudo-text + .rs-contacts-list__item-control,
+.rs-editable:not(.is-without-init-value).is-focus .rs-editable__pseudo-link + * + .rs-contacts-list__item-control,
+.rs-editable:not(.is-without-init-value).is-focus .rs-editable__pseudo-text + * + .rs-contacts-list__item-control {
+  opacity: 1;
+}
+
+@media (min-width: $lg) {
+  .rs-contacts-list {
+    &__item {
+      &-control,
+      .rs-editable__pseudo-link,
+      .rs-editable__pseudo-text {
+        font: {
+          weight: 500;
+          size: 18px;
+        }
+      }
+
+      &-control {
+        padding: 4px 100px 4px 45px;
+
+        .rs-contacts-list__item.is-without-init-value & {
+          padding: 4px 6px 4px 45px;
+        }
+      }
+
+      .rs-editable__pseudo-link,
+      .rs-editable__pseudo-text {
+        max-width: calc(100% - 100px);
+      }
+    }
+  }
+}
+
+@media (min-width: $xl) {
+  .rs-contacts-list {
+    width: 570px;
+  }
+}

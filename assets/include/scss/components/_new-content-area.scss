@@ -1,0 +1,42 @@
+//
+// New Content Area
+//
+
+.rs-new-content-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 335px;
+  cursor: pointer;
+  border: 1px dashed #d6d6d6;
+  border-radius: 4px;
+  padding: 20px;
+  transition: background-color .2s ease-in, border-style .2s ease-in;
+
+  &__icon {
+    color: $danger;
+    transition: color .2s ease-in;
+
+    .rs-new-content-area:hover & {
+      color: #fff;
+    }
+  }
+
+  &__text {
+    font: {
+      weight: 500;
+      size: 15px;
+    }
+    color: #7f8182;
+    transition: color .2s ease-in;
+
+    .rs-new-content-area:hover & {
+      color: #fff;
+    }
+  }
+
+  &:hover {
+    border-style: solid;
+    background-color: #7f8182;
+  }
+}

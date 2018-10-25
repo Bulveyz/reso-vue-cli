@@ -1,0 +1,50 @@
+//
+// Custom Checkbox
+//
+
+.custom-control {
+  &-label {
+    &::after,
+    &::before {
+      .custom-control.and-bordered & {
+        left: -1.875rem;
+      }
+    }
+
+    &::before {
+      .custom-control.and-bordered & {
+        background-color: transparent;
+        border: 2px solid #a9a9a9;
+        border-radius: 0;
+      }
+    }
+
+    .custom-control.and-bordered & {
+      font-size: 15px;
+      color: #7f8182;
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &.and-bordered {
+    padding-left: 1.875rem;
+  }
+}
+
+.custom-checkbox.and-bordered {
+  .custom-control-input {
+    &:checked {
+      & ~ .custom-control-label {
+        color: #313131;
+
+        &::before {
+          background-color: $danger;
+          border-color: $danger;
+        }
+      }
+    }
+  }
+}

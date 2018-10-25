@@ -1,0 +1,22 @@
+// 
+// Project
+// 
+.rs-mt-minus-4 { margin-top: -4px; }
+.rs-small-md { font-size: 13.8px; }
+.rs-sidebar_title_link {
+  &:hover { color: #e64443; }
+}
+
+.rs-sidebar_activities_other {
+  display: none;
+}
+
+#rsShowActivitiesOther.active {
+  i { transform: rotate(180deg); }
+}
+
+@media screen and (max-width: 992px) {
+  .rs-project-body {
+    padding-bottom: 66px;
+  }
+}

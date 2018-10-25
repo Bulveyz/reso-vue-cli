@@ -1,0 +1,98 @@
+//
+// Step Form
+//
+
+.rs-step-form {
+  &-progress {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 34px;
+    padding-left: 0;
+    margin-bottom: 35px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 17px;
+      left: 50%;
+      display: block;
+      width: calc(100% - 60px);
+      border-top: 1px solid #a9a9a9;
+      transform: translateX(-50%);
+    }
+
+    &__item {
+      position: relative;
+      font-weight: 600;
+      color: #313131;
+      list-style: none;
+
+      &-helper {
+        position: absolute;
+        bottom: 100%;
+        left: 50%;
+        display: block;
+        width: 34px;
+        height: 34px;
+        background-color: #fff;
+        border-radius: 50%;
+        transform: translateX(-50%);
+
+        &::before,
+        &::after {
+          content: "";
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          display: block;
+          border-radius: 50%;
+          transform: translate(-50%, -50%);
+        }
+
+        &::before {
+          width: 22px;
+          height: 22px;
+          border: 2px solid transparent;
+
+          .rs-step-form-progress__item.checked &,
+          .rs-step-form-progress__item.current & {
+            border-color: #a9a9a9;
+          }
+
+          .rs-step-form-progress__item.active &,
+          .rs-step-form-progress__item.active.checked &,
+          .rs-step-form-progress__item.current.checked & {
+            border-color: $danger;
+          }
+        }
+
+        &::after {
+          width: 5px;
+          height: 5px;
+          background-color: #a9a9a9;
+
+          .rs-step-form-progress__item.active &,
+          .rs-step-form-progress__item.active.checked &,
+          .rs-step-form-progress__item.current.checked & {
+            background-color: $danger;
+          }
+        }
+      }
+
+      &.checked,
+      &.current {
+        cursor: pointer;
+      }
+    }
+  }
+
+  &-section {
+    display: none;
+
+    &.active {
+      display: block;
+    }
+  }
+}

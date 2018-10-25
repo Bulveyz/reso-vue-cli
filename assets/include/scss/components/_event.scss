@@ -1,0 +1,26 @@
+//
+// Event
+//
+
+.rs-event {
+  &__icon {
+    font-size: 35px;
+    color: $danger;
+  }
+}
+
+a.rs-event {
+  color: #313131;
+
+  &:hover {
+    color: #313131;
+  }
+}
+
+@media (min-width: $md) {
+  .rs-event {
+    &__icon {
+      font-size: 40px;
+    }
+  }
+}

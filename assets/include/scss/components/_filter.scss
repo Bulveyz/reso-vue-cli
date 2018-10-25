@@ -1,0 +1,139 @@
+//
+// Filter
+//
+
+.rs-filter {
+  position: relative;
+  margin-bottom: 25px;
+
+  &-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 6;
+    display: none;
+    width: 100%;
+    list-style-type: none;
+    background-color: #fff;
+    padding: 0;
+
+    &__item {
+      background-color: #ede8e8;
+
+      &.active {
+        position: relative;
+        background-color: #fff;
+
+        &::before {
+          content: "\f107";
+          position: absolute;
+          top: 5px;
+          left: 50%;
+          line-height: 1;
+          font: {
+            size: 12px;
+            family: "FontAwesome", sans-serif;
+          }
+          color: #e64443;
+          transform: translateX(-50%);
+        }
+      }
+
+      &-link {
+        display: flex;
+        height: 52px;
+        align-items: center;
+        justify-content: center;
+        font: {
+          weight: 600;
+          size: 14px;
+        }
+        color: black;
+        transition: all 0.2s ease-in-out;
+
+        &:hover {
+          color: #f82e3a;
+          background-color: #fff;
+          text-decoration: none;
+        }
+
+        .active & {
+          color: #e64443;
+        }
+      }
+    }
+  }
+
+  &__invoker {
+    background-color: #e64443;
+    cursor: pointer;
+    padding: 15px 0;
+
+    &-icon {
+      color: #fff;
+      margin-right: 8px;
+    }
+
+    &-title {
+      line-height: 1;
+      font: {
+        weight: 700;
+        size: 16px;
+      }
+      color: #fff;
+      text-transform: uppercase;
+      margin-bottom: 0;
+
+      small {
+        font: {
+          weight: 700;
+          size: 11px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: $md) {
+  .rs-filter {
+    &__invoker {
+      padding: 25px 0;
+
+      &-icon {
+        margin-right: 0;
+        margin-bottom: 12px;
+      }
+
+      &-title {
+        text-align: center;
+      }
+    }
+  }
+}
+
+@media (min-width: $lg) {
+  .rs-filter {
+    position: absolute;
+    top: 120px;
+    left: 0;
+    z-index: 5;
+    width: 118px;
+    height: 100%;
+    background-color: #ede8e8;
+    margin-bottom: 0;
+    transition: top .2s ease-in-out;
+
+    &-menu {
+      position: static;
+      top: auto;
+      left: auto;
+      background-color: transparent;
+      display: block;
+    }
+
+    .st-fixed & {
+      position: fixed;
+      top: 80px;
+    }
+  }
+}

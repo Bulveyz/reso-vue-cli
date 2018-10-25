@@ -1,0 +1,25 @@
+//
+// Uploaded File
+//
+
+.rs-uploaded-file {
+  &__icon {
+    font-size: 38px;
+    color: $danger;
+  }
+
+  &__info {
+    &-title {
+      line-height: 1.4;
+      font-weight: 700;
+      color: #313131;
+    }
+
+    &-size {
+      display: block;
+      line-height: 1.4;
+      font-size: 12px;
+      color: #767676;
+    }
+  }
+}

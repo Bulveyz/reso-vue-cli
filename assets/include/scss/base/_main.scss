@@ -1,0 +1,240 @@
+//
+// Main Styles
+//
+.rs-body-section {
+  background-color: #fff;
+  border-radius: 4px;
+  padding: 28px 15px;
+}
+
+.rs-section-title {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  color: $danger;
+  margin-bottom: 30px;
+
+  &__icon {
+    font-size: 30px;
+    margin-right: 12px;
+
+    .and-md & {
+      font-size: 25px;
+      margin-right: 8px;
+    }
+  }
+}
+
+.rs-aside__title {
+  margin-bottom: 140px;
+}
+
+.rs-award {
+  position: relative;
+
+  i {
+    position: absolute;
+    bottom: -5px;
+    right: 0;
+    z-index: 1;
+    font-size: 20px;
+  }
+}
+
+.rs-date {
+  font-size: 13px;
+}
+
+// Login, Recover Password, Sign Up Pages, 404
+.rs-login-page,
+.rs-recover-password-page,
+.rs-sign-up-page,
+.rs-404-page {
+  .rs-header {
+    padding: 0;
+
+    &-logo {
+      width: 87px;
+    }
+  }
+
+  .rs-footer {
+    background-color: #eee;
+    padding: 21px 0;
+  }
+
+  .rs-main {
+    position: relative;
+    overflow: hidden;
+    padding: 135px 0 75px;
+  }
+}
+// Login, Recover Password, Sign Up Pages, 404 End
+
+// Search  Page
+.rs-search-page {
+  .rs-main {
+    padding: 115px 0 50px;
+  }
+}
+// Search Page End
+
+.g-line-height-19 {
+  line-height: 19px !important;
+}
+
+.rounded-4 {
+  border-radius: 4px;
+}
+
+.pt-6 {
+  padding-top: 4rem;
+}
+
+.flew-shrink-0 {
+  flex-shrink: 0;
+}
+
+.spacing-20 {
+  margin-left: -10px;
+  margin-right: -10px;
+
+  > [class*="col-"] {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+.rs-top-section {
+  &--lg {
+    padding-top: 140px;
+  }
+}
+
+.rs-pb-6 {padding-bottom: 6rem; }
+
+.rs-text-black { color: black; }
+
+.rs-font-size-12 { font-size: 12px; }
+.rs-font-size-14 { font-size: 14px; }
+.rs-font-size-15 { font-size: 15px; }
+.rs-font-size-20 { font-size: 20px; }
+
+.rs-cursor-default { cursor: default; }
+
+.rs-text-danger-hover {
+  &:hover { color: rgb(230, 68, 67) !important; }
+}
+.rs-font-size-28 { font-size: 28px; }
+
+.rs-flex { display: flex; }
+
+.rs-width-60 { width: 60px; }
+
+.rs-footer--mod {
+  padding-left: 0;
+}
+
+.rs-notification {
+  padding: 15px 20px;
+  border-left: 3px solid #e64443;
+  background-color: #eee;
+}
+
+.rs-text-black--hover {
+  &:hover { color: rgb(49,49,49); }
+}
+
+.flatpickr-innerContainer, .flatpickr-rContainer {
+  width: 100%;
+}
+
+.rs-mb-2 { margin-bottom: 2px !important; }
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .rs-hamburger-path__animate-rotation { 
+    display: none !important; 
+    &::before { display: none !important; }
+  }
+}
+
+
+
+@media (max-width: $md - 1) {
+  .rs-section-title {
+    font-size: 18px;
+  }
+  .rs-footer {
+		.rs-icon-xl { font-size: 2.4rem; }
+  }
+}
+
+@media (min-width: $md) {
+  .rs-body-section {
+    padding: 28px 22px;
+  }
+
+  .rs-sidebar-section {
+    width: 320px;
+  }
+
+  .rs-search-content {
+    width: calc(100% - 250px)
+  }
+
+  .rs-sidebar-section__project {
+    padding: 18px;
+    width: 296px;
+    min-height: 206px;
+  }
+
+  .rs-section-title {
+    &__icon {
+      font-size: 45px;
+
+      .and-md & {
+        font-size: 30px;
+      }
+    }
+  }
+
+  // Login, Recover Password, Sign Up Pages, 404
+  .rs-login-page,
+  .rs-recover-password-page,
+  .rs-sign-up-page,
+  .rs-404-page {
+    .rs-header-logo {
+      width: 140px;
+    }
+
+    .rs-main {
+      padding: 185px 0;
+    }
+
+    .rs-main-content {
+      padding: 0 70px;
+    }
+  }
+
+  .rs-404-page {
+    .rs-main {
+      padding-top: 245px;
+    }
+  }
+  // Login, Recover Password, Sign Up Pages, 404 End
+
+  // Search  Page
+  .rs-search-page {
+    .rs-main {
+      padding: 150px 0 80px;
+    }
+  }
+  // Search Page End
+
+}
+
+@media (min-width: $lg) {
+  .rs-search-content {
+    width: calc(100% - 330px)
+  }
+}

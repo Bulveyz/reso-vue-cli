@@ -1,0 +1,120 @@
+//
+// Dropdown Transformed
+//
+
+.rs-dropdown-transformed {
+  position: relative;
+  z-index: 7;
+
+  &__btn {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $danger;
+    border-radius: 30px;
+    padding: 10px 25px;
+    transition: none;
+
+    &-text {
+      line-height: 1.4;
+      font: {
+        weight: 700;
+        size: 18px;
+      }
+      color: #fff;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    &-icon {
+      position: absolute;
+      top: 50%;
+      right: 20px;
+      color: #fff;
+      transform: translateY(-50%);
+
+      .rs-dropdown-transformed__btn.is-opened & {
+        transform: translateY(-50%) rotateZ(-180deg);
+      }
+    }
+
+    &.is-opened {
+      border-radius: 30px 30px 0 0;
+    }
+  }
+
+  &-menu {
+    position: absolute;
+    top: 100%;
+    display: none;
+    width: 100%;
+    background-color: #fff;
+    padding: 10px 0;
+
+    &__item {
+      display: block;
+      font-weight: 600;
+      color: #313131;
+      padding: 5px 25px;
+      text-align: center;
+
+      &.active,
+      &.active:hover {
+        cursor: default;
+      }
+
+      &:hover {
+        color: $danger;
+      }
+    }
+  }
+}
+
+.rs-dropdown-transformed__btn.is-opened + .rs-dropdown-transformed-menu {
+  border-radius: 0 0 30px 30px;
+}
+
+@media (min-width: $md) {
+  .rs-dropdown-transformed {
+    &__btn {
+      display: none;
+    }
+
+    &-menu {
+      position: static;
+      top: auto;
+      display: flex;
+      width: auto;
+      background-color: transparent;
+      padding: 0;
+
+      &__item {
+        font: {
+          weight: 700;
+          size: 18px;
+        }
+        color: #fff;
+        background-color: transparent;
+        border-radius: 30px;
+
+        &:hover {
+          color: #fff;
+          background-color: rgba(#fff, .1);
+        }
+
+        &.active {
+          background-color: $danger;
+        }
+
+        &:not(:last-child) {
+          margin-right: 4px;
+        }
+      }
+    }
+  }
+
+  .rs-dropdown-transformed__btn.is-opened + .rs-dropdown-transformed-menu {
+    border-radius: 0;
+  }
+}

@@ -1,0 +1,18 @@
+//
+// Effect - Zoom
+//
+
+.rs-effect-img-zoom {
+  &__target {
+    overflow: hidden;
+
+    > img {
+      transform: scale(1);
+      transition: transform .5s ease-in-out;
+
+      .rs-effect-img-zoom:hover & {
+        transform: scale(1.05);
+      }
+    }
+  }
+}

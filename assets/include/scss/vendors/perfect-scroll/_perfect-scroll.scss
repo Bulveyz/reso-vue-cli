@@ -1,0 +1,96 @@
+//
+// Perfect Scroll
+//
+
+.ps.ps--active-y {
+  padding-right: 30px;
+  transition: padding-right .2s ease-in;
+}
+
+.ps.ps--active-x {
+  padding-bottom: 20px;
+  transition: padding-right .2s ease-in;
+}
+
+.ps__rail-x,
+.ps__rail-y,
+.ps:hover > .ps__rail-x,
+.ps:hover > .ps__rail-y,
+.ps--focus > .ps__rail-x,
+.ps--focus > .ps__rail-y,
+.ps--scrolling-x > .ps__rail-x,
+.ps--scrolling-y > .ps__rail-y {
+  opacity: 1;
+}
+
+.ps__rail-x,
+.ps__rail-y,
+.ps--active-x > .ps__rail-x,
+.ps--active-y > .ps__rail-y {
+  background-color: $white;
+}
+
+.ps__rail-x,
+.ps__rail-y {
+  border-radius: 6px;
+}
+
+.ps__rail-x {
+  height: 6px;
+}
+
+.ps__rail-y {
+  width: 6px;
+}
+
+.ps__thumb-x,
+.ps__thumb-y {
+  background-color: $danger;
+}
+
+.ps__thumb-x {
+  bottom: 0;
+}
+
+.ps__thumb-y {
+  right: 0;
+}
+
+// Customizing
+#scrollSecond {
+  .ps__rail-y,
+  .ps__thumb-y {
+    width: 9px;
+    border-radius: 9px;
+  }
+}
+
+#scrollThird {
+  .ps__rail-x,
+  .ps__rail-y,
+  .ps--active-x > .ps__rail-x,
+  .ps--active-y > .ps__rail-y {
+    background-color: rgba($black, .1);
+  }
+
+  .ps__rail-y,
+  .ps__thumb-y {
+    width: 4px;
+    border-radius: 4px;
+  }
+}
+
+#scrollFourth {
+  .ps__rail-x,
+  .ps__rail-y,
+  .ps--active-x > .ps__rail-x,
+  .ps--active-y > .ps__rail-y {
+    background-color: rgba($black, .1);
+  }
+
+  .ps__rail-y,
+  .ps__thumb-y {
+    width: 10px;
+    border-radius: 10px;
+  }
+}

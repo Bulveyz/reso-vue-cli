@@ -1,0 +1,113 @@
+//
+// Tooltip
+//
+
+[data-toggle="tooltip"] {
+  position: relative;
+}
+
+.tooltip-absolute {
+  position: absolute !important;
+  padding-bottom: 0 !important;
+  padding-top: 0 !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+
+  .arrow {
+    bottom: auto !important;
+
+    &::before {
+      top: 0 !important;
+      bottom: auto !important;
+    }
+  }
+
+  &.bs-tooltip-top,
+  &.bs-tooltip-bottom {
+    top: auto !important;
+    bottom: 100% !important;
+    left: 50% !important;
+    width: 215px !important;
+    margin-bottom: 25px !important;
+    transform: translateX(-50%) !important;
+
+    .tooltip-inner {
+      width: 215px !important;
+    }
+
+    .arrow {
+      top: 100% !important;
+    }
+  }
+
+  &.bs-tooltip-left,
+  &.bs-tooltip-right {
+    bottom: auto !important;
+    top: -20px !important;
+    left: auto !important;
+    right: 100% !important;
+    margin-right: 25px !important;
+    transform: none !important;
+
+    .tooltip-inner {
+      width: 285px !important;
+    }
+
+    .arrow {
+      top: 20px !important;
+      left: 100% !important;
+      right: auto !important;
+
+      &::before {
+        border: {
+          width: 8px 0 8px 8px;
+          color: transparent transparent transparent $white;
+        }
+      }
+    }
+  }
+
+  &.bs-tooltip-left {
+
+  }
+
+  &.bs-tooltip-right {
+    left: 100% !important;
+    right: auto !important;
+    margin-left: 25px !important;
+
+    .arrow {
+      left: auto !important;
+      right: 100% !important;
+
+      &::before {
+        border: {
+          width: 8px 8px 8px 0;
+          color: transparent $white transparent transparent;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: $xl) {
+  .tooltip-absolute {
+    &.bs-tooltip-right {
+      left: 100% !important;
+      right: auto !important;
+      margin-left: 25px !important;
+
+      .arrow {
+        left: auto !important;
+        right: 100% !important;
+
+        &::before {
+          border: {
+            width: 8px 8px 8px 0;
+            color: transparent $white transparent transparent;
+          }
+        }
+      }
+    }
+  }
+}

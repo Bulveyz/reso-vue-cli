@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="22px" height="22px" viewBox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Project" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Reso-Projet-Mobile" transform="translate(-316.000000, -1550.000000)" fill="#E64443" fill-rule="nonzero" stroke="#000000">
+            <g id="Navigation-tabs" transform="translate(0.000000, 1537.000000)">
+                <path d="M327,34 C321.477153,34 317,29.5228475 317,24 C317,18.4771525 321.477153,14 327,14 C332.522848,14 337,18.4771525 337,24 C337,29.5228475 332.522848,34 327,34 Z M327,33.2 C332.08102,33.2 336.2,29.0810197 336.2,24 C336.2,18.9189803 332.08102,14.8 327,14.8 C321.91898,14.8 317.8,18.9189803 317.8,24 C317.8,29.0810197 321.91898,33.2 327,33.2 Z M326.6,18.8 L327.4,18.8 L327.4,26 L326.6,26 L326.6,18.8 Z M327.4,25.2 L333.8,25.2 L333.8,26 L327.4,26 L327.4,25.2 Z" id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>

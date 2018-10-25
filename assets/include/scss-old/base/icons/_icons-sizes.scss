@@ -1,0 +1,38 @@
+//
+// Icon Sizes
+//
+//
+
+.rs-icon {
+  &-xl {
+    @include px-to-rem(font-size, 50px);
+  }
+
+  &-lg {
+    @include px-to-rem(font-size, 36px);
+  }
+
+  &-xlg {
+    @include px-to-rem(font-size, 32px);
+  }
+
+  &-smd {
+    @include px-to-rem(font-size, 28px);
+  }
+
+  &-md {
+    @include px-to-rem(font-size, 24px);
+  }
+
+  &-xmd {
+    @include px-to-rem(font-size, 22px);
+  }
+
+  &-sm {
+    @include px-to-rem(font-size, 18px);
+  }
+
+  &-xsm {
+    @include px-to-rem(font-size, 16px);
+  }
+}

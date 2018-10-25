@@ -1,0 +1,61 @@
+//
+// Links
+//
+
+[class*="rs-link"] {
+  cursor: pointer;
+  text-decoration: none;
+  transition: color .2s ease-in;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.rs-link {
+  &-red {
+    color: $danger;
+
+    &:hover {
+      color: darken($danger, 10%);
+    }
+  }
+
+  &-dark {
+    color: $dark;
+
+    &:hover {
+      color: $danger;
+    }
+  }
+
+  &-grey {
+    color: $grey;
+
+    &:hover {
+      color: darken($danger, 10%);
+    }
+  }
+
+  &-white {
+    color: #fff;
+
+    &:hover {
+      color: #e64443;
+    }
+  }
+
+  &-underline {
+    text-decoration: underline;
+  }
+}
+
+.u-link-v5 {
+  text-decoration: none;
+  transition: all .2s;
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+  }
+}

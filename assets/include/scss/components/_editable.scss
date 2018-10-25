@@ -1,0 +1,99 @@
+//
+// Editable
+//
+
+.rs-editable {
+  position: relative;
+
+  &__control {
+    width: 100%;
+    line-height: 1;
+    color: #fff;
+    background-color: transparent;
+    border: none;
+
+    &:focus {
+      outline: 0 none;
+    }
+
+    &[readonly] {
+      cursor: default;
+    }
+  }
+
+  &__btn {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    z-index: 3;
+    display: none;
+    align-items: center;
+    font: {
+      weight: 700;
+      size: 16px;
+    }
+    background-color: transparent;
+    cursor: pointer;
+    border: 0 none;
+    transform: translateY(-50%);
+    transition: all .2s ease-in;
+
+    &:focus {
+      outline: 0 none;
+    }
+
+    &.and-edit {
+      color: $danger;
+
+      .rs-editable:hover &,
+      .rs-editable.is-focus & {
+        display: inline-flex;
+      }
+
+      .rs-editable.is-change &,
+      .rs-editable.is-without-init-value & {
+        display: none;
+      }
+    }
+
+    &.and-done {
+      color: $success;
+
+      .rs-editable.is-change & {
+        display: inline-flex;
+      }
+
+      .rs-editable.is-without-init-value:not(.is-change) & {
+        display: none;
+      }
+    }
+  }
+
+  &__pseudo-link,
+  &__pseudo-text {
+    position: absolute;
+    top: 50%;
+    z-index: 2;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transform: translateY(-50%);
+
+    .rs-editable.is-focus & {
+      display: none;
+    }
+  }
+
+  &__pseudo-link {
+    &:hover {
+      color: $danger;
+    }
+  }
+
+  &:hover,
+  &.is-change,
+  &.is-focus,
+  &.is-without-init-value {
+    background-color: rgba(#fff, .1);
+  }
+}

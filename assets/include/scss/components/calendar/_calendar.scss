@@ -1,0 +1,93 @@
+//
+// Calendar
+//
+
+.rs-calendar {
+  margin-left: 20px;
+  flex-shrink: 0;
+  padding: 40px 20px 10px;
+  width: 294px;
+  margin-right: 10px;
+  background-color: rgba(228, 30, 29, 0.7);
+
+  &-events {
+    margin-top: 20px;
+
+    &__item {
+      padding: 15px 8px;
+
+      &-date {
+        display: inline-flex;
+        flex-direction: column;
+        line-height: 1;
+        font: {
+          weight: 400;
+          size: 30px;
+        }
+        color: #313131;
+        text-transform: uppercase;
+        text-align: center;
+
+        small {
+          font: {
+            weight: 600;
+            size: 15px;
+          }
+        }
+      }
+
+      &-text {
+        line-height: 1.4;
+        font: {
+          weight: 600;
+          size: 14px;
+        }
+        color: #313131;
+        margin-bottom: 0;
+      }
+    }
+
+    .slick-list {
+      background-color: #fff;
+      border-radius: 4px;
+      margin-bottom: 20px;
+    }
+  }
+
+  .slick-dots {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+
+    li {
+      margin-right: 4px;
+      margin-left: 4px;
+
+      button {
+        padding: 0;
+        flex-shrink: 0;
+        width: 13px;
+        height: 13px;
+        border-radius: 100%;
+        border: 2px solid white;
+        background-color: transparent;
+        text-indent: -9999px;
+        cursor: pointer;
+
+        &[aria-selected="true"] {
+          background-color: #fff;
+          outline: none;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: $md) {
+  .rs-calendar {
+    margin-left: 0;
+  }
+}

@@ -1,0 +1,48 @@
+// 
+// Members
+//
+
+.rs-members__list {
+  .media {
+    width: 80%;
+  }
+}
+
+.rs-select-member {
+  .select2-results__options {
+    padding: 10px;
+    .mCSB_dragger_bar { width: 4px; background-color: #aaa !important; }
+    .mCSB_draggerRail { width: 4px; background-color: #efefef; }
+  }
+}
+
+
+
+@media screen and (max-width: 767px) {
+  .rs-members__list .media {
+    width: 100%;
+  }
+
+}
+
+@media screen and (max-width: 615px) {
+  .rs-member-select {
+    width: 350px;
+  }
+}
+
+@media screen and (max-width: 430px) { 
+  .rs-member-select {
+    width: auto;
+    min-width: 100%;
+  }
+  .rs-select_wrap { width: 100%; }
+
+  .rs-inviter-block {
+    padding: 15px;
+    .btn {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+  }
+}

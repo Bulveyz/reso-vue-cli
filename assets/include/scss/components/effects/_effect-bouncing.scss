@@ -1,0 +1,23 @@
+//
+// Effect - Bouncing
+//
+
+.rs-effect-bouncing-left-to-right {
+  position: relative;
+  top: 0;
+  animation: bouncingTopToBottom .8s ease infinite;
+}
+
+@keyframes bouncingTopToBottom {
+  from {
+    top: 0;
+  }
+
+  50% {
+    top: 4px;
+  }
+
+  to {
+    top: 0;
+  }
+}

@@ -1,0 +1,272 @@
+@font-face {
+  font-family: 'Reso Icon Font';
+  src: url('./reso-icon-font.eot');
+  src: url('./reso-icon-font.eot#iefix') format('embedded-opentype'),
+  url('./reso-icon-font.svg') format('svg'),
+  url('./reso-icon-font.ttf') format('truetype'),
+  url('./reso-icon-font.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="reso-icon-"],
+[class*=" reso-icon-"] {
+  font-family: "Reso Icon Font", sans-serif;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.reso-icon-paper-airplane:before {
+  content: "\e920";
+}
+
+.reso-icon-paper-airplane-alt:before {
+  content: "\e921";
+}
+
+.reso-icon-three-dots:before {
+  content: "\e900";
+}
+
+.reso-icon-angle-left:before {
+  content: "\e901";
+}
+
+.reso-icon-angle-right:before {
+  content: "\e902";
+}
+
+.reso-icon-document:before {
+  content: "\e903";
+}
+
+.reso-icon-link:before {
+  content: "\e904";
+}
+
+.reso-icon-check:before {
+  content: "\e905";
+}
+
+.reso-icon-uncheck:before {
+  content: "\e906";
+}
+
+.reso-icon-comment:before {
+  content: "\e907";
+}
+
+.reso-icon-pencil:before {
+  content: "\e908";
+}
+
+.reso-icon-hand-with-icon:before {
+  content: "\e909";
+}
+
+.reso-icon-envelope:before {
+  content: "\e90a";
+}
+
+.reso-icon-facebook-bordered:before {
+  content: "\e90b";
+}
+
+.reso-icon-facebook:before {
+  content: "\e90c";
+}
+
+.reso-icon-close:before {
+  content: "\e90d";
+}
+
+.reso-icon-filter:before {
+  content: "\e90e";
+}
+
+.reso-icon-angle-down-square:before {
+  content: "\e90f";
+}
+
+.reso-icon-angle-right-square:before {
+  content: "\e910";
+}
+
+.reso-icon-angle-left-rounded:before {
+  content: "\e911";
+}
+
+.reso-icon-angle-right-rounded:before {
+  content: "\e912";
+}
+
+.reso-icon-graphic:before {
+  content: "\e913";
+}
+
+.reso-icon-like:before {
+  content: "\e914";
+}
+
+.reso-icon-linkedin:before {
+  content: "\e915";
+}
+
+.reso-icon-magnifier:before {
+  content: "\e916";
+}
+
+.reso-icon-medal:before {
+  content: "\e917";
+}
+
+.reso-icon-members:before {
+  content: "\e918";
+}
+
+.reso-icon-members-heads:before {
+  content: "\e919";
+}
+
+.reso-icon-book:before {
+  content: "\e91a";
+}
+
+.reso-icon-members-alt:before {
+  content: "\e91b";
+}
+
+.reso-icon-chart:before {
+  content: "\e91c";
+}
+
+.reso-icon-angle-down-bordered:before {
+  content: "\e91d";
+}
+
+.reso-icon-plus-rounded .path1:before {
+  content: "\e91e";
+  color: rgb(0, 0, 0);
+}
+
+.reso-icon-plus-rounded .path2:before {
+  content: "\e91f";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+
+.reso-icon-pin:before {
+  content: "\e922";
+}
+
+.reso-icon-cog:before {
+  content: "\e923";
+}
+
+.reso-icon-triangle-down:before {
+  content: "\e924";
+}
+
+.reso-icon-document-alt:before {
+  content: "\e925";
+}
+
+.reso-icon-phone:before {
+  content: "\e926";
+}
+
+.reso-icon-twitter-bordered:before {
+  content: "\e927";
+}
+
+.reso-icon-twitter:before {
+  content: "\e928";
+}
+
+.reso-icon-skills:before {
+  content: "\e929";
+}
+
+.reso-icon-camera:before {
+  content: "\e92a";
+}
+
+.reso-icon-chat:before {
+  content: "\e92b";
+}
+
+.reso-icon-refresh:before {
+  content: "\e92c";
+}
+
+.reso-icon-chevron-right:before {
+  content: "\e92d";
+}
+
+.reso-icon-chevron-left:before {
+  content: "\e92e";
+}
+
+.reso-icon-pdf:before {
+  content: "\e92f";
+}
+
+.reso-icon-excel:before {
+  content: "\e930";
+}
+
+.reso-icon-image:before {
+  content: "\e931";
+}
+
+.reso-icon-pdf-alt:before {
+  content: "\e932";
+}
+
+.reso-icon-powerpoint:before {
+  content: "\e933";
+}
+
+.reso-icon-word:before {
+  content: "\e934";
+}
+
+.reso-icon-play:before {
+  content: "\e935";
+}
+
+.reso-icon-unmute:before {
+  content: "\e936";
+}
+
+.reso-icon-acronym:before {
+  content: "\e937";
+}
+
+.reso-icon-bell:before {
+  content: "\e938";
+}
+
+.reso-icon-calendar:before {
+  content: "\e939";
+}
+
+.reso-icon-fleche:before {
+  content: "\e93a";
+}
+
+.reso-icon-doc-edit:before {
+  content: "\e93b";
+}
+
+.reso-icon-like-filled:before {
+  content: "\e93d";
+}

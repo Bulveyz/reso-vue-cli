@@ -1,0 +1,18 @@
+//
+// Avatar
+//
+
+.rs-avatar {
+  position: relative;
+
+  &__icon {
+    &-bottom-right {
+      bottom: -3px;
+      right: 2px;
+    }
+  }
+}
+
+[class*="rs-avatar__icon"] {
+  position: absolute;
+}

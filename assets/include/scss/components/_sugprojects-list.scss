@@ -1,0 +1,39 @@
+//
+// Suggestions de Projets
+//
+
+.rs-sugprojects-list {
+  &_link {
+    text-decoration: underline;
+    color: #e64443;
+
+    &:hover {
+      text-decoration: none;
+      color: #e64443;
+    }
+  }
+
+  &__title {
+    line-height: 1.5;
+  }
+
+  &__icons {
+    font-size: 15px;
+    color: $grey-600;
+  }
+
+  .rs-badge {
+    position: absolute;
+    bottom: -10px;
+    left: 10px;
+    z-index: 1;
+  }
+}
+
+a.rs-sugprojects-list {
+  color: #313131;
+
+  &:hover {
+    color: #313131;
+  }
+}

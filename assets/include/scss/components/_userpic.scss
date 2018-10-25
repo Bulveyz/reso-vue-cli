@@ -1,0 +1,218 @@
+//
+// Userpic
+//
+
+.rs-main-profile-avatar img {
+  border: 0 none;
+}
+
+.filepond--drop-icon {
+  font-size: 22px;
+  color: #fff;
+}
+
+.filepond--item {
+  margin-bottom: 0;
+}
+
+.filepond--drop-label {
+  left: auto;
+  right: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+
+  label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    padding: 0;
+  }
+}
+
+.filepond--label-action {
+  text-decoration-color: #babdc0;
+}
+
+.filepond--panel-root {
+  border-radius: 50%;
+  background-color: #edf0f4;
+}
+
+.filepond--item-panel {
+  background-color: #595e68;
+}
+
+.filepond--drip {
+  border-radius: 50%;
+}
+
+.filepond--drip-blob {
+  background-color: #7f8a9a;
+}
+
+.filepond {
+  padding: 0;
+  margin-right: auto;
+  margin-left: auto;
+
+  &.rs-main-profile__userpic {
+    width: 140px;
+    height: 140px;
+    border: 2px solid #fff;
+    margin-bottom: 30px;
+  }
+
+  &.rs-form-userpic {
+    width: 118px;
+    height: 118px;
+    margin-bottom: 30px;
+  }
+}
+
+.filepond--file-poster-wrapper {
+  border-radius: 50%;
+}
+
+.filepond--file-poster-overlay {
+  display: none;
+}
+
+.filepond--action-retry-item-load svg path {
+  fill: #000;
+}
+
+.filepond--root,
+.filepond--image-preview-wrapper {
+  border-radius: 9999px;
+  margin-bottom: 0;
+}
+
+.filepond--list {
+  left: 0;
+  right: 0;
+  border-radius: 50%;
+  overflow: hidden;
+
+  .rs-main-profile__userpic & {
+    width: 136px;
+    height: 136px;
+  }
+
+  .rs-form-userpic & {
+    width: 118px;
+    height: 118px;
+  }
+}
+
+.filepond--drop-label {
+  bottom: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+.filepond--file {
+  padding: 0;
+  border-radius: 50%;
+}
+
+.filepond--file-info {
+  display: none;
+}
+
+.filepond--file-action-button {
+  display: none;
+}
+
+.filepond--image-preview-overlay {
+  display: none;
+}
+
+.filepond--item-panel {
+  display: none;
+}
+
+.filepond--file .filepond--file-action-button {
+  opacity: 0;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  &:active,
+  &:focus {
+    outline: 0 none;
+  }
+}
+
+.filepond--drop-label {
+  top: auto;
+  bottom: 5px;
+  left: auto;
+  right: 5px;
+  z-index: 7;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: $danger;
+  pointer-events: all !important;
+  transition: all .2s ease-in;
+  transform: none !important;
+
+  .rs-main-profile__userpic & {
+    opacity: 0 !important;
+    visibility: hidden !important;
+  }
+
+  .rs-main-profile__userpic:hover & {
+    opacity: 1 !important;
+    visibility: visible !important;
+  }
+
+  .rs-form-userpic & {
+    opacity: 1 !important;
+    visibility: visible !important;
+  }
+}
+
+.filepond--drop-label-icon {
+  font-size: 18px;
+  color: #fff;
+}
+
+.filepond--file .filepond--progress-indicator {
+  top: auto;
+  right: calc(50% - 10px);
+  bottom: 1.1875em;
+  color: #000
+}
+
+@media (min-width: $md) {
+  .filepond {
+    &.rs-form-userpic {
+      margin-bottom: 0;
+      margin-right: 15px;
+    }
+  }
+}
+
+@media (min-width: $lg) {
+  .rs-main-profile__userpic {
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 30px;
+  }
+
+  .filepond {
+    &.rs-form-userpic {
+      margin-right: 22px;
+    }
+  }
+}

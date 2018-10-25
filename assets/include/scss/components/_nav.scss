@@ -1,0 +1,71 @@
+//
+// Nav
+//
+
+.nav-tabs,
+.nav-pills {
+  .nav-link {
+    font: {
+      weight: 700;
+      size: 16px;
+    }
+    white-space: nowrap;
+
+    &.small {
+      font-size: 14px;
+    }
+
+    &.active,
+    &.active:hover {
+      cursor: default;
+    }
+
+    &:not(.active):hover {
+      background-color: rgba(#fff, .1);
+      // background-color: #e64443;
+    }
+  }
+}
+
+.rs-nav {
+  &-light {
+    .nav-link {
+      color: #fff;
+    }
+  }
+
+  &-dark {
+    .nav-link {
+      color: #7f8182;
+
+      &:not(.active):hover {
+        background-color: rgba(#7f8182, .1);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .rs-nav-custransform {
+    flex-direction: column;
+  }
+
+  .rs-nav-custransform-order-1 {
+    order: 1;
+
+    &.ml-auto {
+      margin-right: auto;
+    }
+  }
+  .rs-nav-custransform-order-2 {
+    order: 2;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .rs-nav-light {
+    .nav-link {
+      color: inherit;
+    }
+  }
+}
